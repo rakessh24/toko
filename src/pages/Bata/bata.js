@@ -11,7 +11,7 @@ import {
 import { ThemeProvider } from '@emotion/react';
 import { theme } from '../../Utils/getTheme';
 import Buttons from '../../components/Button/Button';
-import Navbarcomp from '../../components/navbarcomp';
+import Navbarcomp1 from '../../components/navbarcomp1';
 
 
 //data dari backend
@@ -43,7 +43,7 @@ export default function Bata() {
   return (
     <ThemeProvider theme={theme}>
       <Container >
-        <Navbarcomp />
+        <Navbarcomp1 />
         <Container component={"main"} maxWidth="md" sx={{ pt: 5, pb: 6 }} align="center" >
           <Typography component={"h4"} variant={"h5"} align="center" gutterBottom >
             Halo, Selamat Datang

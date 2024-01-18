@@ -10,12 +10,12 @@ import {
 } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from '../../Utils/getTheme';
-import Navbarcomp from '../../components/navbarcomp';
+import Navbarcomp1 from '../../components/navbarcomp1';
 import Buttons from '../../components/Button/Button';
 
 //data dari backend
 //ini contoh data dummy
-const dataRoster = [
+const dataListbeton = [
   {
     Iamge: "/ListAntik.png",
     description: " List Motif Antik",
@@ -68,11 +68,11 @@ const dataRoster = [
   }
 ]
 
-export default function roster() {
+export default function listbeton() {
   return (
     <ThemeProvider theme={theme}>
       <Container >
-        <Navbarcomp />
+        <Navbarcomp1 />
         <Container component={"main"} maxWidth="md" sx={{ pt: 5, pb: 6 }} align="center" >
           <Typography component={"h4"} variant={"h5"} align="center" gutterBottom >
             Halo, Selamat Datang
@@ -82,7 +82,7 @@ export default function roster() {
         <Container component={"main"} maxWidth="md" >
           <Grid container spacing={5} alignItems="flex-end">
             {
-              dataRoster.map((item, index) => {
+              dataListbeton.map((item, index) => {
                 return (
                   <Grid item key={index} lg={4} md={4} sm={4} xs={12}>
                     <Card>

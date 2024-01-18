@@ -5,19 +5,20 @@ import Roster from './pages/Roster/roster';
 import Bata from './pages/Bata/bata';
 import Listbeton from './pages/Listbeton/listbeton';
 import Login from './pages/Login/Login';
-import Signup from './pages/Signup/signup';
+import Signup from './pages/Signup/registrasi';
 import Riwayat from './pages/Riwayat/riwayat';
 import Keranjang from './pages/Keranjang/keranjang';
 import Profil from './pages/Profil/profil';
 import DetailProduk from './pages/Detail Produk/detailproduk';
 import Cek from './pages/Cek/cek';
+import Logout from './pages/Home/logout';
 
 
 function App() {
   return (
     <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Logout />} />
           <Route path="/home" element={<Home />} />
           <Route path="/roster" element={<Roster />} />
           <Route path="/bata" element={<Bata />} />
@@ -29,6 +30,7 @@ function App() {
           <Route path="/profil" element={<Profil />} />
           <Route path="/detailproduk" element={<DetailProduk />} />
           <Route path="/cek" element={<Cek />} />
+          <Route path="/logout" element={<Logout />} />
         </Routes>
     </Router>
   );

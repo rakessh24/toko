@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 import { ThemeProvider } from '@emotion/react';
 import { theme } from '../../Utils/getTheme';
-import Navbarcomp from '../../components/navbarcomp';
+import Navbarcomp1 from '../../components/navbarcomp1';
 import Buttons from '../../components/Button/Button';
 
 //data dari backend
@@ -62,7 +62,7 @@ export default function roster() {
   return (
     <ThemeProvider theme={theme}>
       <Container >
-        <Navbarcomp />
+        <Navbarcomp1 />
         <Container component={"main"} maxWidth="md" sx={{ pt: 5, pb: 6 }} align="center" >
           <Typography component={"h4"} variant={"h5"} align="center" gutterBottom >
             Halo, Selamat Datang

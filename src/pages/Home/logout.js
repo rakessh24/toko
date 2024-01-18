@@ -8,10 +8,10 @@ import {
   CardMedia,
   CardContent,
 } from '@mui/material';
-import Navbarcomp1 from '../../components/navbarcomp1';
+import Navbarcomp from '../../components/navbarcomp';
 import Gambar from '../../image/BannerHome.png';
 
-const Home = () => {
+const Logout = () => {
   const products = [
     {
       id: 1,
@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <Container>
-      <Navbarcomp1 />
+      <Navbarcomp />
       <Typography component={"h2"} variant="h4" gutterBottom>
         Welcome to Our Online Store
       </Typography>
@@ -43,4 +43,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Logout;
